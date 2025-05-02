@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script src="chart.js"></script>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+      <label>
+        <input type="checkbox" id="darkModeToggle">
+        Dark Mode
+      </label>
+    </div>
+
+    <!-- API Key Input -->
+    <div class="api-key-container">
+      <input id="apiKeyInput" type="password" placeholder="Enter your API Key" />
+      <button id="saveKeyBtn">Save Key</button>
+    </div>
+
+    <!-- Code Input & Analyze -->
+    <textarea id="codeInput" placeholder="Enter your code here..."></textarea>
+    <button id="analyzeBtn">Analyze Complexity</button>
+
+    <!-- Charts -->
+    <div class="charts-container">
+      <div class="chart-box">
+        <canvas id="timeComplexityChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="spaceComplexityChart"></canvas>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
